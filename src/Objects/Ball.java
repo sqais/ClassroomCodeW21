@@ -1,23 +1,27 @@
 package Objects;
 
 public class Ball {
-	private String color;
+	private Color color;
 	private int size;
 	
-	public Ball(String c, int s) {
+	public Ball(Color c, int s) {
 		color=c;
 		size=s;
 	}
-	
+	//Copy constructor
+	public Ball(Ball b) {
+		color=b.color;
+		size=b.size;
+	}
 	public void bounce(int n) {
 		for(int i=0;i<n;i++) {
 			System.out.println("Bounce");
 		}
 	}
-	public String getColor(){
+	public Color getColor(){
 		return color;
 	}
-	public void setColor(String c){
+	public void setColor(Color c){
 		color=c;
 	}
 	public int getSize() {
