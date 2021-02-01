@@ -7,6 +7,8 @@ public class HandleFile {
 	  public static void main(String[] args) {
 	    try {
 	      File myObj = new File("filename.txt");
+	      File myfile=new File("MyFile.txt");
+	      
 	      if (myObj.createNewFile()) {
 	        System.out.println("File created: " + myObj.getName());
 	      } else {
@@ -14,7 +16,7 @@ public class HandleFile {
 	      }
 	    } catch (IOException e) {
 	      System.out.println("An error occurred.");
-	      e.printStackTrace();
+	      //e.printStackTrace();
 	    }
 	  }
 	}

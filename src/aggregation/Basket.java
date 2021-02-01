@@ -10,12 +10,13 @@ public class Basket {
 		balls = new ArrayList<Ball>();
 		size=s;
 	}
-	public void addBal(Ball b) {
+	public void addBal(String color, int size) {
+		Ball b1 =new Ball(color,size);
 		if (balls.size()==size) {
 			System.out.println("Basket is full");
 		}
 		else {
-			balls.add(b);
+			balls.add(b1);
 		}
 	}
 	public void printBalls() {

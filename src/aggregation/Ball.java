@@ -41,4 +41,8 @@ public class Ball {
 		else
 			size=s;
 	}
+	public String toString() {
+		String msg="";
+		return ("The color is:"+color+" ,"+"size is "+size);
+	}
 }
