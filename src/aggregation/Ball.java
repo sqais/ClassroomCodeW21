@@ -43,6 +43,6 @@ public class Ball {
 	}
 	public String toString() {
 		String msg="";
-		return ("The color is:"+color+" ,"+"size is "+size);
+		return ("The color is:"+color+","+"The size is:"+size);
 	}
 }

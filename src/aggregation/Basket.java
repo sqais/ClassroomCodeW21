@@ -19,6 +19,9 @@ public class Basket {
 			balls.add(b1);
 		}
 	}
+	public ArrayList<Ball> getListofBalls(){
+		return balls;
+	}
 	public void printBalls() {
 		for(Ball b:balls) {
 			System.out.println(b.getColor());
